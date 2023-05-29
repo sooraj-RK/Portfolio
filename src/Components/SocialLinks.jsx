@@ -25,15 +25,14 @@ const SocialLinks = () => {
             
         },
         {
-            id:3,
-            child:(
-                <>
+            id: 3,
+            child: (
+              <>
                 Mail <HiOutlineMail size={30} />
-                </>
+              </>
             ),
             href: 'mailto:iamsoorajrajkumar@gmail.com',
-            
-        },
+          },
 
     ]
     

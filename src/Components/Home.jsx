@@ -16,7 +16,7 @@ const Home = () => {
         text-white'>
             I am a Full Stack Developer
             </h2>
-          <p className='text-stone-500 py-4 max-w-md'>
+          <p className='text-stone-500 py-4 '>
             Full stack developer driven by a continuous desire to learn, solve
             problems and innovate. I am excited to take on new challenges,
             leverage my existing skills, and contribute to the success of a
