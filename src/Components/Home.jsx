@@ -5,18 +5,12 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
-    <div 
-    name= "home"
-    className='h-screen w-full bg-gradient-to-b from-black
-    to-gray-800'>
-      <div className='max-w-screen-lg mx-auto flex flex-col items-center 
-      justify-center h-full px-3 md:flex-row'>
-        
-        <div className='flex flex-col justify-center h-full'>
-          <h2 className='text-4xl sm:text-6xl font-bold 
-        text-white'>
-            I am a Full Stack Developer
-            </h2>
+    <div name="home" className='h-screen w-full bg-gradient-to-b from-black to-gray-800'>
+    <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-3 md:flex-row'>
+      <div className='flex flex-col justify-center h-full mt-20 md:mt-0'>
+        <h2 className='text-4xl sm:text-6xl font-bold text-white text-center sm:text-left'>
+          I am a Full Stack Developer
+        </h2>
           <p className=' text-2xl text-stone-500 py-4 '>
             Full stack developer driven by a continuous desire to learn, solve
             problems and innovate. I am excited to take on new challenges,
@@ -35,7 +29,8 @@ const Home = () => {
           </div>
         </div>
         <div>
-            <img src={mainimage} alt='Profile pic' className='rounded-2xl mb-10 mx-auto w-2/3 md:max-w-full' />
+        <img src={mainimage} alt='Profile pic' className='rounded-2xl mb-10 mx-auto w-3/4 md:max-w-full h-auto' />
+
         </div>
       </div>
     </div>
