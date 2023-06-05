@@ -18,7 +18,7 @@ const Contact = () => {
             action="https://getform.io/f/8f2160f9-d7ba-4d3f-b8f3-3e81e8bce27f"
             method="POST"
             className="flex flex-col w-full md:w-1/2"
-            style={{ maxWidth: "500px" }} // Adjust the width to your preference
+            style={{ maxWidth: "500px" }} 
           >
             <input
               type="text"
