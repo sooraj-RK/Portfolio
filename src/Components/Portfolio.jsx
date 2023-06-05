@@ -1,14 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import Ecommerce from '../assets/E Commerce.jpg'
+import AI from '../assets/open ai.jpeg'
+import restaurant from '../assets/restaurant.jpg'
+import weather from '../assets/weather.jpg'
+import BMW from '../assets/BMW.jpg'
+import Movie from '../assets/movie search.jpeg'
 
 const Portfolio = () => {
+  // const [showDemo, setShowDemo] = useState(false); 
+
   const portfolios = [
     {
       id: 1,
       src: Ecommerce,
+      codeLink: "https://github.com/sooraj-RK/Mern-Ecommerce.git", 
+      demo: false, 
+    },
+    {
+      id: 2,
+      src: AI,
+      codeLink: "https://github.com/sooraj-RK/MERN-AI-Image-Generation.git", 
+      demo: false, 
+    },
+    {
+      id: 3,
+      src: restaurant,
+      codeLink: "https://github.com/sooraj-RK/react-restaurants.git", 
+      demo: false, 
+    },
+    {
+      id: 4,
+      src: weather,
+      demoLink:'https://sooraj-rk.github.io/Weather-update/',
+      codeLink: "https://github.com/sooraj-RK/Weather-update.git", 
+      demo: true, 
+    },
+    {
+      id: 5,
+      src: Movie,
+      demoLink:'https://sooraj-rk.github.io/movie-search/',
+      codeLink: "https://github.com/sooraj-RK/movie-search.git", 
+      demo: true, 
+    },
+    {
+      id: 6,
+      src: BMW,
+      demoLink:'https://sooraj-rk.github.io/Weather-update/',
+      codeLink: "https://github.com/sooraj-RK/Weather-update.git", 
+      demo: true, 
     },
     
+    
   ];
+
+  const handleClick = (link) => {
+    
+    window.location.href = link;
+  };
 
   return (
     <div
@@ -24,20 +72,36 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
+          {portfolios.map(({ id, src, demoLink, codeLink, demo }) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md object-cover h-64 w-full duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105">
+                {demo && (
+                  <a
+                    href={demoLink}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleClick(demoLink);
+                    }}
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  >
+                    Demo
+                  </a>
+                )}
+                <a
+                  href={codeLink}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleClick(codeLink);
+                  }}
+                  className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -46,5 +110,6 @@ const Portfolio = () => {
     </div>
   );
 };
+
 
 export default Portfolio;
