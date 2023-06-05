@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Ecommerce from '../assets/E Commerce.jpg'
 import AI from '../assets/open ai.jpeg'
 import restaurant from '../assets/restaurant.jpg'
@@ -7,7 +7,7 @@ import BMW from '../assets/BMW.jpg'
 import Movie from '../assets/movie search.jpeg'
 
 const Portfolio = () => {
-  // const [showDemo, setShowDemo] = useState(false); 
+  
 
   const portfolios = [
     {
@@ -45,8 +45,8 @@ const Portfolio = () => {
     {
       id: 6,
       src: BMW,
-      demoLink:'https://sooraj-rk.github.io/Weather-update/',
-      codeLink: "https://github.com/sooraj-RK/Weather-update.git", 
+      demoLink:'https://sooraj-rk.github.io/BMW/',
+      codeLink: "https://github.com/sooraj-RK/BMW.git", 
       demo: true, 
     },
     
