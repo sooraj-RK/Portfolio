@@ -15,11 +15,10 @@ const About = () => {
                 </p>
             </div>
             <p className='text-xl mt-20 '>
-            Hi,<br/> I'm Sooraj Rajkumar, a passionate full-stack web developer with expertise in creating dynamic and 
-            responsive web applications. With  strong foundation in both front-end and back-end development, I bring designs to life while ensuring better functionality. 
-            I stay up-to-date with the latest trends,
-             allowing me to deliver cutting-edge solutions and seamless user experiences across devices and platforms.
-            
+            <br/> I am a passionate Full stack developer driven by a continuous desire to learn, solve
+            problems and innovate. I am excited to take on new challenges,
+            leverage my existing skills, and contribute to the success of a
+            forward-thinking organization that values collaboration, creativity.
             
 
             </p>
