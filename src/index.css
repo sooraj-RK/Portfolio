@@ -10,3 +10,17 @@
   }
 }
 
+.portfolio-container {
+  position: relative;
+  z-index: 1;
+}
+
+.experience-container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 3;
+}
