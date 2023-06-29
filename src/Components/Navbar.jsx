@@ -31,9 +31,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4  text-white bg-black fixed">
+    <div className="navbar flex justify-between items-center w-full h-20 px-4  text-white bg-black fixed">
       <div>
-        <Link onClick={handleLogoClick} to='home' className="text-5xl  font-bold">SR</Link>
+        <Link onClick={handleLogoClick} to='home' className="text-5xl font-serif px-3  font-bold">SRK</Link>
       </div>
 
       <ul className="hidden md:flex">

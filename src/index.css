@@ -17,10 +17,19 @@
 
 .experience-container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .contact-container {
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
+
+.navbar {
+  z-index: 2;
+}
+.social {
+  z-index: 1;
+}
+
+

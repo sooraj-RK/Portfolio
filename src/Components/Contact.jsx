@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white relative"
+      className=" w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white relative"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
@@ -50,7 +50,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="text-center text-gray-400 py-4 absolute bottom-0 left-0 w-full">
+      <div className="text-center text-gray-400  absolute bottom-0 left-0 w-full">
         &copy; {currentYear} {authorName}
       </div>
     </div>
