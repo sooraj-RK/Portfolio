@@ -18,11 +18,14 @@
 .experience-container {
   position: relative;
   z-index: 1;
+  padding-top: 12rem;
 }
 
 .contact-container {
   position: relative;
-  z-index: 1;
+  z-index: 0;
+  padding-top: 10rem;
+  height: auto;
 }
 
 .navbar {
@@ -32,4 +35,7 @@
   z-index: 1;
 }
 
-
+.exheading {
+  margin-top: 10px;
+  padding-top: 12rem;
+}
